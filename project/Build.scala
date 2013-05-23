@@ -13,7 +13,7 @@ object ApplicationBuild extends Build {
     "com.google.code.gson" % "gson" % "2.2.3"
   )
 
-  val scalext = Project("scalext", file("modules/scalext"))
+  val scalext = play.Project("scalext", appVersion, appDependencies, path = file("modules/scalext"))
 
   val scalextExample = play.Project(appName, appVersion, appDependencies).settings(
     // Add your own project settings here      

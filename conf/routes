@@ -7,5 +7,8 @@ GET     /live                       controllers.Application.live
 # Examples
 GET     /examples                   controllers.Examples.index
 
+
+-> /scalext scalext.Routes
+
 # Resources
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
