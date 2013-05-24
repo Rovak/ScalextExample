@@ -1,4 +1,4 @@
-package com.scalext.example
+package direct
 
 import com.scalext.annotations._
 import play.api.libs.Files.TemporaryFile

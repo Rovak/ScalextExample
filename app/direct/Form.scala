@@ -1,4 +1,4 @@
-package com.scalext.example
+package direct
 
 import com.scalext.annotations.Remotable
 import com.scalext.direct.remoting.api.FormResult

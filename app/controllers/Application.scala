@@ -1,16 +1,15 @@
 package controllers
 
+import com.scalext.frontend.grid.Column
+import com.scalext.frontend.grid.{Panel => GridPanel}
+
+import actors.LiveActor
+import actors.UpdateStatus
+import akka.actor.actorRef2Scala
+import play.api.libs.json.JsValue
 import play.api.mvc.Action
 import play.api.mvc.Controller
-import com.scalext.frontend.Panel
 import play.api.mvc.WebSocket
-import play.api.libs.json.JsValue
-import com.scalext.frontend.grid.{ Panel => GridPanel }
-import com.scalext.frontend.grid.Column
-import game.actors.LiveActor
-import game.actors.UpdateStatus
-import com.google.gson._
-import com.scalext.direct.remoting.api.Method
 
 object Application extends Controller {
 
@@ -34,6 +33,6 @@ object Application extends Controller {
   }
 
   def live = WebSocket.async[JsValue] { request =>
-    game.actors.LiveActor.join()
+    actors.LiveActor.join()
   }
 }

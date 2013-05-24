@@ -1,4 +1,4 @@
-package game.actors
+package actors
 
 import scala.concurrent.duration.DurationInt
 import akka.actor.Actor

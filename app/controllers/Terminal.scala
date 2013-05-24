@@ -1,21 +1,21 @@
 package controllers
 
-import com.scalext.annotations.Remotable
-import scala.io.Source
-import game.actors.LiveActor
-import game.actors.UpdateStatus
-import akka.pattern.ask
+import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
-import akka.actor.Actor
-import akka.actor.Props
+import scala.io.Source
+
+import org.apache.commons.lang3.StringEscapeUtils.escapeHtml4
+
+import com.scalext.annotations.Remotable
+
+import actors.LiveActor
+import actors.Session
+import actors.SessionList
+import actors.UpdateStatus
 import akka.actor.actorRef2Scala
 import akka.pattern.ask
 import akka.util.Timeout
-import scala.concurrent.Await
-import game.actors.Session
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
-import game.actors.SessionList
-import org.apache.commons.lang3.StringEscapeUtils.escapeHtml4
 
 @Remotable(name = "TerminalCtrl")
 class Terminal {
