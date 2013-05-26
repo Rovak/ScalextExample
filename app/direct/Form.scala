@@ -1,7 +1,7 @@
 package direct
 
 import com.scalext.annotations.Remotable
-import com.scalext.direct.remoting.api.FormResult
+import com.scalext.direct.remoting.FormResult
 import com.scalext.annotations.FormHandler
 
 case class Profile(name: String, email: String, company: String)

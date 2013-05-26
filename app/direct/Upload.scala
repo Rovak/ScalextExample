@@ -2,7 +2,7 @@ package direct
 
 import com.scalext.annotations._
 import play.api.libs.Files.TemporaryFile
-import com.scalext.direct.remoting.api.FormResult
+import com.scalext.direct.remoting.FormResult
 
 @Remotable(name = "Scalext.example.Upload")
 class Upload {

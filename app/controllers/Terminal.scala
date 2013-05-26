@@ -3,11 +3,8 @@ package controllers
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
 import scala.io.Source
-
 import org.apache.commons.lang3.StringEscapeUtils.escapeHtml4
-
 import com.scalext.annotations.Remotable
-
 import actors.LiveActor
 import actors.Session
 import actors.SessionList
@@ -16,6 +13,7 @@ import akka.actor.actorRef2Scala
 import akka.pattern.ask
 import akka.util.Timeout
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
+import com.scalext.annotations.Remotable
 
 @Remotable(name = "TerminalCtrl")
 class Terminal {
