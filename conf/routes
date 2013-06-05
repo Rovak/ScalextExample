@@ -1,12 +1,6 @@
 # Application
-GET     /                           controllers.Application.index
-GET     /dashboard                  controllers.Application.dashboard
-
-GET     /live                       controllers.Application.live
-
-# Examples
-GET     /examples                   controllers.Examples.index
-
+GET     /                           controllers.Examples.index
+GET     /live                       controllers.Live.live
 
 -> /scalext scalext.Routes
 

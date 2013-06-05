@@ -15,7 +15,7 @@ Ext.define('ScalextApp.view.direct.Grid', {
         }],
         proxy: {
             type: 'direct',
-            directFn: Application.Direct.Grid.getGrid
+            directFn: Scalext.example.Grid.getGrid
         },
         fields: [
             { name: 'name' },
