@@ -28,12 +28,3 @@ class DirectTest {
     itemList
   }
 }
-
-@Remotable
-class Direct2Test {
-
-  @Remotable(name = "gas2")
-  def AddItem(item: String) = {
-    println(s"Added Item $item")
-  }
-}
