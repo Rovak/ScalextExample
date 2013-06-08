@@ -17,12 +17,11 @@
     </head>
     <body>
         <script type="text/javascript">
-            Ext.app.REMOTING_API = @Html(Json.stringify(com.scalext.direct.remoting.api.ApiFactory.config.toJson))
-            Ext.direct.Manager.addProvider(Ext.app.REMOTING_API);
             Ext.Loader.setPath({
                 'Ext.ux' : '@routes.Assets.at("Ext.ux")'
             });   
         </script>
+        <script type="text/javascript" src="@com.scalext.controllers.routes.Api.buildApi()"></script>
         <script type="text/javascript" src="@routes.Assets.at("examples/app.js")"></script>
     </body>
 </html>

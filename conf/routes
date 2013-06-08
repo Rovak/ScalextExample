@@ -1,6 +1,5 @@
 # Application
 GET     /                           controllers.Examples.index
-GET     /live                       controllers.Live.live
 
 -> /scalext scalext.Routes
 
