@@ -11,7 +11,7 @@ class Form {
 
   @Remotable
   def getBasicInfo(): FormResult = {
-    var profile = Profile(
+    val profile = Profile(
       "Roy van Kaathoven",
       "ik@royvankaathoven.nl",
       "Roy")
